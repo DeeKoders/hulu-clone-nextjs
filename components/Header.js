@@ -8,17 +8,56 @@ import {
   MagnifyingGlassIcon,
   UserIcon,
 } from "@heroicons/react/24/outline";
-
 function Header() {
+  const tabs = [
+    {
+      id: 1,
+      title: "Home",
+      icon: HomeIcon,
+    },
+    {
+      id: 2,
+      title: "Trending",
+      icon: BoltIcon,
+    },
+    {
+      id: 3,
+      title: "Verified",
+      icon: CheckBadgeIcon,
+    },
+    {
+      id: 4,
+      title: "Collection",
+      icon: CircleStackIcon,
+    },
+    {
+      id: 5,
+      title: "Search",
+      icon: MagnifyingGlassIcon,
+    },
+    {
+      id: 6,
+      title: "Account",
+      icon: UserIcon,
+    },
+  ];
+
   return (
     <header className="flex flex-col sm:flex-row m-5 justify-between items-center h-auto">
       <div className="flex flex-grow justify-evenly max-w-2xl mt-5">
-        <HeaderIcon title={"HOME"} Icon={HomeIcon} />
+        {/* <HeaderIcon
+          title={"HOME"}
+          Icon={HomeIcon}
+          onClick={() => router.push("/Home")}
+        />
         <HeaderIcon title={"TRENDING"} Icon={BoltIcon} />
         <HeaderIcon title={"VERIFIED"} Icon={CheckBadgeIcon} />
         <HeaderIcon title={"COLLECTION"} Icon={CircleStackIcon} />
         <HeaderIcon title={"SEARCH"} Icon={MagnifyingGlassIcon} />
-        <HeaderIcon title={"ACCOUNT"} Icon={UserIcon} />
+        <HeaderIcon title={"ACCOUNT"} Icon={UserIcon} /> */}
+        {tabs.map((tab) => {
+          return <HeaderIcon key={tab.id} title={tab.title} Icon={tab.icon} />;
+        })}
       </div>
       <Image
         className="object-contain"
