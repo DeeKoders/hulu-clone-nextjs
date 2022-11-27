@@ -45,16 +45,6 @@ function Header() {
   return (
     <header className="flex flex-col sm:flex-row m-5 justify-between items-center h-auto">
       <div className="flex flex-grow justify-evenly max-w-2xl mt-5">
-        {/* <HeaderIcon
-          title={"HOME"}
-          Icon={HomeIcon}
-          onClick={() => router.push("/Home")}
-        />
-        <HeaderIcon title={"TRENDING"} Icon={BoltIcon} />
-        <HeaderIcon title={"VERIFIED"} Icon={CheckBadgeIcon} />
-        <HeaderIcon title={"COLLECTION"} Icon={CircleStackIcon} />
-        <HeaderIcon title={"SEARCH"} Icon={MagnifyingGlassIcon} />
-        <HeaderIcon title={"ACCOUNT"} Icon={UserIcon} /> */}
         {tabs.map((tab) => {
           return <HeaderIcon key={tab.id} title={tab.title} Icon={tab.icon} />;
         })}
