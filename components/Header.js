@@ -15,26 +15,26 @@ function Header() {
       title: "Home",
       icon: HomeIcon,
     },
-    {
-      id: 2,
-      title: "Trending",
-      icon: BoltIcon,
-    },
-    {
-      id: 3,
-      title: "Verified",
-      icon: CheckBadgeIcon,
-    },
-    {
-      id: 4,
-      title: "Collection",
-      icon: CircleStackIcon,
-    },
-    {
-      id: 5,
-      title: "Search",
-      icon: MagnifyingGlassIcon,
-    },
+    // {
+    //   id: 2,
+    //   title: "Trending",
+    //   icon: BoltIcon,
+    // },
+    // {
+    //   id: 3,
+    //   title: "Verified",
+    //   icon: CheckBadgeIcon,
+    // },
+    // {
+    //   id: 4,
+    //   title: "Collection",
+    //   icon: CircleStackIcon,
+    // },
+    // {
+    //   id: 5,
+    //   title: "Search",
+    //   icon: MagnifyingGlassIcon,
+    // },
     {
       id: 6,
       title: "Account",
